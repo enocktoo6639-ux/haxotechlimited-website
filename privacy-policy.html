@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#110e1b">
-<meta name="description" content="Corporate website privacy information for HAXOTECH LIMITED.">
+<meta name="description" content="HAXOTECH LIMITED corporate website privacy policy, information handling practices, privacy rights and business contact information.">
+<link rel="canonical" href="https://haxotechlimited.online/privacy-policy.html">
 <title>Privacy Policy | HAXOTECH LIMITED</title>
 
 <style>
@@ -36,6 +37,7 @@ body {
     color: var(--white);
     font-family: "Segoe UI", Inter, Arial, sans-serif;
     line-height: 1.8;
+    overflow-x: hidden;
 }
 
 a {
@@ -113,19 +115,10 @@ header {
     color: var(--gold);
 }
 
-.notice {
-    text-align: center;
-    padding: 13px 20px;
-    background: #251c36;
-    color: var(--muted);
-    font-size: 13px;
-    border-bottom: 1px solid var(--border);
-}
-
 .hero {
     position: relative;
     overflow: hidden;
-    padding: 85px 0;
+    padding: 90px 0;
     background:
         radial-gradient(ellipse at 85% 30%,#44265d,transparent 48%),
         radial-gradient(ellipse at 0% 100%,#302040,transparent 45%),
@@ -169,6 +162,7 @@ header {
     content: "";
     width: 24px;
     height: 1px;
+    flex-shrink: 0;
     background: var(--gold);
 }
 
@@ -213,7 +207,7 @@ h1 {
 
 .hero-art svg {
     width: 100%;
-    max-width: 360px;
+    max-width: 380px;
     height: auto;
     overflow: visible;
 }
@@ -234,6 +228,30 @@ h1 {
 @keyframes float {
     0%,100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
+}
+
+.privacy-strip {
+    border-bottom: 1px solid var(--border);
+    background: #1a1425;
+}
+
+.privacy-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.strip-item {
+    padding: 23px 15px;
+    text-align: center;
+    color: var(--muted);
+    border-right: 1px solid var(--border);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.strip-item:last-child {
+    border-right: none;
 }
 
 .policy-layout {
@@ -301,7 +319,12 @@ h1 {
     left: 30px;
     right: 30px;
     height: 1px;
-    background: linear-gradient(90deg,transparent,rgba(245,201,139,.3),transparent);
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(245,201,139,.3),
+        transparent
+    );
 }
 
 .section-heading {
@@ -367,6 +390,26 @@ h1 {
     overflow-wrap: anywhere;
 }
 
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 24px;
+    background: linear-gradient(120deg,#c5aaff,#e1baff);
+    border-radius: 9px;
+    color: #20142f;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: transform .25s,box-shadow .25s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(184,152,255,.22);
+}
+
 .contact-box {
     border-radius: 15px;
     border: 1px solid rgba(245,201,139,.2);
@@ -386,6 +429,10 @@ h1 {
     color: var(--gold);
     font-weight: 600;
     overflow-wrap: anywhere;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -497,7 +544,19 @@ a:focus-visible {
     }
 
     h1 {
+        font-size: clamp(36px,10vw,52px);
         letter-spacing: -1.5px;
+    }
+
+    .strip-item {
+        font-size: 9px;
+        letter-spacing: .5px;
+        padding: 18px 7px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -518,6 +577,7 @@ a:focus-visible {
 <body>
 
 <header>
+
     <div class="container navbar">
 
         <a class="brand" href="index.html"
@@ -537,12 +597,8 @@ a:focus-visible {
         </a>
 
     </div>
-</header>
 
-<div class="notice">
-    Draft privacy notice — pending organization approval
-    and confirmation of business contact arrangements.
-</div>
+</header>
 
 <main>
 
@@ -564,14 +620,15 @@ a:focus-visible {
             </h1>
 
             <p>
-                Privacy information concerning the corporate
-                website of HAXOTECH LIMITED, business
-                communications and the responsible handling
-                of personal information.
+                The Privacy Policy of HAXOTECH LIMITED
+                explains how personal information associated
+                with our corporate website and business
+                communications may be collected, used,
+                protected and disclosed.
             </p>
 
             <span class="date-label">
-                Draft prepared: November 25, 2026
+                Last updated: November 26, 2026
             </span>
 
         </div>
@@ -692,6 +749,26 @@ a:focus-visible {
 
 </section>
 
+<div class="privacy-strip">
+
+    <div class="container privacy-strip-grid">
+
+        <div class="strip-item">
+            PRIVACY INFORMATION
+        </div>
+
+        <div class="strip-item">
+            SECURE HTTPS CONNECTION
+        </div>
+
+        <div class="strip-item">
+            BUSINESS CONTACT
+        </div>
+
+    </div>
+
+</div>
+
 <div class="container policy-layout">
 
     <aside class="sidebar">
@@ -731,24 +808,26 @@ a:focus-visible {
             </div>
 
             <p>
-                This draft privacy notice has been prepared
-                for HAXOTECH LIMITED to explain the handling
-                of personal information associated with its
-                corporate website and business communications.
+                HAXOTECH LIMITED ("we", "our" or "us")
+                recognizes the importance of privacy,
+                transparency and responsible handling
+                of personal information.
             </p>
 
             <p>
-                HAXOTECH LIMITED provides mobile application
-                development, custom software development,
-                website development, systems integration,
-                and IT consulting and support.
+                This Privacy Policy describes the information
+                associated with our corporate website and
+                business communications, the purposes for
+                which such information may be processed,
+                and the privacy rights available under
+                applicable legislation.
             </p>
 
             <p>
-                The organization must review and approve this
-                notice against its actual information handling
-                practices before adopting it as an effective
-                privacy policy.
+                Our business activities include mobile
+                application development, custom software
+                development, website development, systems
+                integration, and IT consulting and support.
             </p>
 
         </section>
@@ -761,19 +840,20 @@ a:focus-visible {
             </div>
 
             <p>
-                This notice is intended to cover visitors
-                to the corporate website associated with
-                <strong>haxotechlimited.online</strong>
-                and individuals who communicate with the
-                organization through its business contact
-                channels.
+                This policy applies to our corporate website at
+                <a class="inline-link"
+                   href="https://haxotechlimited.online/">
+                    haxotechlimited.online
+                </a>
+                and personal information supplied through
+                our published business email address.
             </p>
 
             <p>
-                Separate mobile applications, software products,
+                Individual applications, software products,
                 client information systems and third-party
-                services may require additional privacy
-                disclosures and contractual arrangements.
+                services may be subject to additional privacy
+                notices and contractual arrangements.
             </p>
 
         </section>
@@ -782,18 +862,18 @@ a:focus-visible {
 
             <div class="section-heading">
                 <span class="section-number">03</span>
-                <h2>Information Collected</h2>
+                <h2>Information We Collect</h2>
             </div>
 
             <p>
-                The current corporate website is designed
-                as an informational resource and does not
-                contain user registration forms, payment
-                forms or account login functionality.
+                Our corporate website is an informational
+                resource and does not currently contain
+                user registration forms, payment forms
+                or account login functionality.
             </p>
 
             <p>
-                Information associated with website hosting
+                Information associated with website visits
                 and business communications may include:
             </p>
 
@@ -806,8 +886,8 @@ a:focus-visible {
             </ul>
 
             <p>
-                Individuals should avoid sending passwords,
-                financial credentials or unnecessary sensitive
+                Please avoid sending passwords, financial
+                credentials or unnecessary sensitive
                 personal information through general email.
             </p>
 
@@ -817,23 +897,23 @@ a:focus-visible {
 
             <div class="section-heading">
                 <span class="section-number">04</span>
-                <h2>How Information May Be Used</h2>
+                <h2>How Information Is Used</h2>
             </div>
 
             <p>
-                Subject to the organization's confirmed
-                information handling arrangements, relevant
-                information may be processed to:
+                Information associated with our website
+                and business communication channels
+                may be processed for purposes such as:
             </p>
 
             <ul>
-                <li>Respond to business enquiries.</li>
-                <li>Discuss software and technology requirements.</li>
-                <li>Provide requested information and technical assistance.</li>
-                <li>Maintain website availability and security.</li>
-                <li>Investigate technical problems.</li>
-                <li>Communicate regarding business arrangements.</li>
-                <li>Comply with applicable legal obligations.</li>
+                <li>Responding to business enquiries.</li>
+                <li>Discussing software and technology requirements.</li>
+                <li>Providing requested information and technical assistance.</li>
+                <li>Maintaining website availability and security.</li>
+                <li>Investigating technical problems and potential misuse.</li>
+                <li>Communicating regarding business arrangements.</li>
+                <li>Complying with applicable legal obligations.</li>
             </ul>
 
         </section>
@@ -859,9 +939,9 @@ a:focus-visible {
             </ul>
 
             <p>
-                The organization must determine the applicable
-                legal grounds according to its jurisdiction
-                and actual processing activities.
+                The applicable legal basis depends on the
+                purpose, circumstances and legal requirements
+                associated with the relevant processing activity.
             </p>
 
         </section>
@@ -882,14 +962,15 @@ a:focus-visible {
             <p>
                 Hosting providers, browser services and external
                 websites may independently process technical
-                information under their own privacy arrangements.
+                information according to their own privacy
+                arrangements.
             </p>
 
             <p>
                 If advertising, analytics or other tracking
-                technologies are introduced, the relevant
-                privacy disclosures and consent arrangements
-                must be reviewed and updated.
+                technologies are introduced on this website,
+                relevant privacy disclosures and consent
+                arrangements must be reviewed and updated.
             </p>
 
         </section>
@@ -908,22 +989,17 @@ a:focus-visible {
             </p>
 
             <p>
-                Information may also require disclosure for
-                purposes such as:
+                Information may also be disclosed where
+                reasonably necessary for purposes such as:
             </p>
 
             <ul>
-                <li>Responding to requested services or enquiries.</li>
+                <li>Providing requested services or responding to enquiries.</li>
                 <li>Maintaining information system security.</li>
                 <li>Complying with applicable legal obligations.</li>
                 <li>Responding to valid requests from competent authorities.</li>
                 <li>Establishing, exercising or defending legal rights.</li>
             </ul>
-
-            <p>
-                Actual recipients and sharing arrangements
-                must be confirmed before this notice is finalized.
-            </p>
 
         </section>
 
@@ -935,22 +1011,22 @@ a:focus-visible {
             </div>
 
             <p>
-                Retention periods should reflect the purposes
-                for which information is collected, the nature
-                of relevant business relationships and applicable
-                legal requirements.
+                The retention of personal information depends
+                on the purposes for which it is processed,
+                the nature of relevant business relationships,
+                operational requirements and applicable law.
             </p>
 
             <p>
-                Hosting and email providers may retain operational
-                records and backups according to their own
-                retention policies.
+                Website hosting and email providers may retain
+                operational records and backups according to
+                their respective retention practices.
             </p>
 
             <p>
-                The organization's specific retention periods
-                and information deletion procedures remain
-                subject to confirmation.
+                Individuals may contact us for information
+                about applicable retention arrangements
+                or to request deletion where legally applicable.
             </p>
 
         </section>
@@ -963,24 +1039,23 @@ a:focus-visible {
             </div>
 
             <p>
-                Appropriate technical and organizational
-                security measures are important for protecting
-                personal information against unauthorized
-                access, alteration, disclosure or loss.
+                Our corporate website uses HTTPS encryption
+                to protect connections between supported
+                web browsers and the hosting infrastructure.
             </p>
 
             <p>
-                HTTPS encryption is planned for the corporate
-                website through its hosting infrastructure.
-                The final security configuration must be tested
-                before launch.
+                Appropriate technical and organizational
+                security measures are important for protecting
+                personal information against unauthorized
+                access, disclosure, alteration or loss.
             </p>
 
             <p>
                 No method of internet transmission or electronic
                 storage can be guaranteed completely secure.
                 Individuals should exercise appropriate care
-                when sharing information online.
+                when sharing personal information online.
             </p>
 
         </section>
@@ -1009,10 +1084,16 @@ a:focus-visible {
             </ul>
 
             <p>
-                The organization must confirm the procedures
-                for responding to privacy requests, applicable
-                deadlines and relevant supervisory authorities.
+                Requests may be submitted using our published
+                business email. Reasonable identity verification
+                may be necessary to protect personal information
+                from unauthorized disclosure.
             </p>
+
+            <a class="button"
+               href="mailto:contact@haxotechlimited.online?subject=Privacy%20Rights%20Request">
+                Submit a Privacy Request &rarr;
+            </a>
 
         </section>
 
@@ -1024,17 +1105,24 @@ a:focus-visible {
             </div>
 
             <p>
-                The corporate website is designed to provide
-                general business and technology information.
-                It does not contain child-specific registration
-                or account creation functionality.
+                Our corporate website provides general
+                business and technology information.
+                It is not specifically designed to collect
+                personal information from children.
             </p>
 
             <p>
-                Any applications or software services intended
-                for younger audiences must have appropriate
-                privacy arrangements reflecting their intended
-                users and applicable legal requirements.
+                Parents or guardians with concerns about
+                personal information supplied by a child
+                may contact us using the business email
+                address provided in this policy.
+            </p>
+
+            <p>
+                Applications or software services intended
+                for younger audiences require separate
+                privacy arrangements appropriate to their
+                intended users and applicable legal requirements.
             </p>
 
         </section>
@@ -1047,10 +1135,9 @@ a:focus-visible {
             </div>
 
             <p>
-                The corporate website is being prepared for
-                hosting through GitHub Pages. Business email
-                services are planned through Namecheap Private
-                Email.
+                Our corporate website is hosted using
+                GitHub Pages. Our business email services
+                are provided through Namecheap Private Email.
             </p>
 
             <p>
@@ -1085,7 +1172,9 @@ a:focus-visible {
             <p>
                 External websites and services may operate
                 independently and have their own privacy
-                policies and terms.
+                policies and terms. Visitors should review
+                the relevant policies when accessing
+                third-party services.
             </p>
 
         </section>
@@ -1100,7 +1189,7 @@ a:focus-visible {
             <p>
                 Website hosting, communications and supporting
                 infrastructure providers may operate in
-                different countries.
+                multiple countries.
             </p>
 
             <p>
@@ -1111,10 +1200,9 @@ a:focus-visible {
             </p>
 
             <p>
-                Relevant transfer arrangements, safeguards
-                and applicable legal requirements must be
-                reviewed by the organization before adopting
-                this policy.
+                Applicable international transfer requirements
+                and safeguards depend on the relevant
+                jurisdiction and processing arrangements.
             </p>
 
         </section>
@@ -1127,9 +1215,9 @@ a:focus-visible {
             </div>
 
             <p>
-                HAXOTECH LIMITED's confirmed business activities
-                include mobile application development and
-                custom software development.
+                HAXOTECH LIMITED provides mobile application
+                development, custom software development
+                and related technology services.
             </p>
 
             <p>
@@ -1140,8 +1228,8 @@ a:focus-visible {
             </p>
 
             <p>
-                Where applicable, separate application privacy
-                policies must address:
+                Where applicable, application-specific
+                privacy policies must address:
             </p>
 
             <ul>
@@ -1156,9 +1244,10 @@ a:focus-visible {
             </ul>
 
             <p>
-                This corporate website privacy notice does not
-                replace the privacy policy required for any
-                individual mobile application or software service.
+                This corporate website Privacy Policy does not
+                replace the privacy disclosures required
+                for any individual mobile application
+                or software service.
             </p>
 
         </section>
@@ -1171,17 +1260,21 @@ a:focus-visible {
             </div>
 
             <p>
-                This notice should be reviewed whenever website
-                functionality, service providers, information
-                handling arrangements or applicable legal
-                requirements change.
+                This Privacy Policy may be updated to reflect
+                changes in website functionality, service
+                providers, information handling arrangements
+                or applicable legal requirements.
             </p>
 
             <p>
-                Following organization approval, the effective
-                policy and subsequent revisions should be
-                published on this page with the appropriate
-                effective or update date.
+                Updated versions will be published on this
+                page with a revised update date.
+            </p>
+
+            <p>
+                Visitors are encouraged to review this policy
+                periodically to remain informed about
+                relevant changes.
             </p>
 
         </section>
@@ -1194,9 +1287,9 @@ a:focus-visible {
             </div>
 
             <p>
-                The following business contact channel is
-                proposed for corporate enquiries, technical
-                support and privacy-related communications.
+                For questions about this Privacy Policy,
+                personal information, privacy rights or
+                business communications, please contact:
             </p>
 
             <div class="contact-box">
@@ -1208,26 +1301,27 @@ a:focus-visible {
                 <h3>HAXOTECH LIMITED</h3>
 
                 <p>
-                    <strong>Website domain:</strong><br>
+                    <strong>Official website:</strong><br>
 
-                    <a class="inline-link" href="index.html">
+                    <a class="inline-link"
+                       href="https://haxotechlimited.online/">
                         haxotechlimited.online
                     </a>
                 </p>
 
                 <p>
-                    <strong>Proposed business email:</strong><br>
+                    <strong>Business and privacy email:</strong><br>
 
-                    <span class="contact-email">
+                    <a class="contact-email"
+                       href="mailto:contact@haxotechlimited.online">
                         contact@haxotechlimited.online
-                    </span>
+                    </a>
                 </p>
 
-                <p>
-                    Business email activation, testing and
-                    privacy request arrangements are pending
-                    confirmation.
-                </p>
+                <a class="button"
+                   href="mailto:contact@haxotechlimited.online?subject=Privacy%20Enquiry">
+                    Contact Our Organization &rarr;
+                </a>
 
             </div>
 
@@ -1284,7 +1378,7 @@ a:focus-visible {
             </span>
 
             <span>
-                Corporate Privacy Notice &middot; Draft
+                Privacy &middot; Transparency &middot; Responsibility
             </span>
 
         </div>
