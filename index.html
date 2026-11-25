@@ -5,8 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#110e1b">
-<meta name="description" content="HAXOTECH LIMITED provides mobile application development, custom software development, website development, systems integration and IT consulting and support.">
+<meta name="description" content="HAXOTECH LIMITED provides mobile application development, custom software development, website development, systems integration, IT consulting and support.">
 <title>HAXOTECH LIMITED | Technology & Software Solutions</title>
+<link rel="canonical" href="https://haxotechlimited.online/">
 
 <style>
 :root {
@@ -57,7 +58,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(17,14,27,.95);
+    background: rgba(17,14,27,.96);
     backdrop-filter: blur(22px);
     border-bottom: 1px solid var(--border);
 }
@@ -195,6 +196,7 @@ nav a:hover {
     content: "";
     width: 24px;
     height: 1px;
+    flex-shrink: 0;
     background: var(--gold);
 }
 
@@ -350,6 +352,14 @@ section {
 
 .info-row strong {
     font-size: 15px;
+}
+
+.info-row a {
+    color: var(--gold);
+}
+
+.info-row a:hover {
+    text-decoration: underline;
 }
 
 .services {
@@ -558,6 +568,16 @@ section {
     margin-bottom: 23px;
 }
 
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+.contact-actions {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 23px;
+}
+
 .contact-note {
     font-size: 13px;
     color: var(--muted);
@@ -571,7 +591,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.8fr 1fr 1fr;
+    grid-template-columns: 1.8fr 1fr 1.3fr;
     gap: 45px;
     padding-bottom: 40px;
 }
@@ -663,6 +683,10 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .menu-toggle {
         display: block;
     }
@@ -721,6 +745,7 @@ button:focus-visible {
     }
 
     h1 {
+        font-size: clamp(36px,10vw,52px);
         letter-spacing: -1.5px;
     }
 
@@ -814,8 +839,8 @@ button:focus-visible {
                     Explore Our Services &rarr;
                 </a>
 
-                <a class="button button-outline" href="#about">
-                    Discover HAXOTECH
+                <a class="button button-outline" href="#contact">
+                    Get in Touch
                 </a>
 
             </div>
@@ -1004,9 +1029,9 @@ button:focus-visible {
 
             <p class="section-description">
                 HAXOTECH LIMITED is a technology company
-                offering software development, digital
-                application development, website development,
-                systems integration and IT consulting services.
+                offering mobile application development,
+                custom software development, website development,
+                systems integration, and IT consulting and support.
             </p>
 
             <br>
@@ -1045,13 +1070,21 @@ button:focus-visible {
             </div>
 
             <div class="info-row">
-                <span>Corporate website domain</span>
-                <strong>haxotechlimited.online</strong>
+                <span>Corporate website</span>
+                <strong>
+                    <a href="https://haxotechlimited.online/">
+                        haxotechlimited.online
+                    </a>
+                </strong>
             </div>
 
             <div class="info-row">
-                <span>Proposed business email</span>
-                <strong>contact@haxotechlimited.online</strong>
+                <span>Business email</span>
+                <strong>
+                    <a href="mailto:contact@haxotechlimited.online">
+                        contact@haxotechlimited.online
+                    </a>
+                </strong>
             </div>
 
         </div>
@@ -1094,7 +1127,7 @@ button:focus-visible {
                 <span class="service-number">01</span>
 
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <rect x="6" y="2" width="12"
                               height="20" rx="3"/>
                         <path d="M10 18h4"/>
@@ -1116,7 +1149,7 @@ button:focus-visible {
                 <span class="service-number">02</span>
 
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M8 6l-6 6 6 6"/>
                         <path d="M16 6l6 6-6 6"/>
                         <path d="M14 3l-4 18"/>
@@ -1138,7 +1171,7 @@ button:focus-visible {
                 <span class="service-number">03</span>
 
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <rect x="2" y="3" width="20"
                               height="18" rx="3"/>
                         <path d="M2 8h20M6 5.5h1M10 5.5h1"/>
@@ -1160,7 +1193,7 @@ button:focus-visible {
                 <span class="service-number">04</span>
 
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <rect x="2" y="2" width="8"
                               height="8" rx="2"/>
                         <rect x="14" y="14" width="8"
@@ -1185,7 +1218,7 @@ button:focus-visible {
                 <span class="service-number">05</span>
 
                 <div class="service-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M3 14v-3a9 9 0 0118 0v3"/>
                         <rect x="2" y="12" width="5"
                               height="7" rx="2"/>
@@ -1351,10 +1384,10 @@ button:focus-visible {
             </h2>
 
             <p class="section-description">
-                HAXOTECH LIMITED's business contact channel
-                is being prepared for software development
-                enquiries, technology discussions and
-                support communications.
+                Contact HAXOTECH LIMITED to discuss mobile
+                application development, software projects,
+                website development, systems integration,
+                IT consulting and technical support requirements.
             </p>
 
             <div class="actions">
@@ -1375,17 +1408,32 @@ button:focus-visible {
             <h3>HAXOTECH LIMITED</h3>
 
             <div class="contact-label">
-                Proposed business email
+                Business enquiries and technical support
             </div>
 
-            <span class="contact-email">
+            <a class="contact-email"
+               href="mailto:contact@haxotechlimited.online">
                 contact@haxotechlimited.online
-            </span>
+            </a>
+
+            <div class="contact-actions">
+
+                <a class="button"
+                   href="mailto:contact@haxotechlimited.online?subject=Business%20Enquiry">
+                    Send a Business Enquiry &rarr;
+                </a>
+
+                <a class="button button-outline"
+                   href="mailto:contact@haxotechlimited.online?subject=Technical%20Support">
+                    Contact Technical Support
+                </a>
+
+            </div>
 
             <p class="contact-note">
-                Business email activation and testing are
-                pending. Please check back for confirmed
-                contact arrangements.
+                For privacy-related enquiries, please use
+                our business email and include
+                "Privacy Enquiry" in the subject line.
             </p>
 
         </div>
@@ -1433,6 +1481,7 @@ button:focus-visible {
                     <a href="#about">About Us</a>
                     <a href="#services">Our Services</a>
                     <a href="#approach">Our Approach</a>
+                    <a href="#principles">Our Principles</a>
 
                 </div>
 
@@ -1440,7 +1489,7 @@ button:focus-visible {
 
             <div>
 
-                <h4>Information</h4>
+                <h4>Information &amp; Support</h4>
 
                 <div class="footer-links">
 
@@ -1450,7 +1499,17 @@ button:focus-visible {
 
                     <a href="#contact">Contact Information</a>
 
-                    <a href="#principles">Our Principles</a>
+                    <a href="mailto:contact@haxotechlimited.online?subject=Business%20Enquiry">
+                        Business Enquiries
+                    </a>
+
+                    <a href="mailto:contact@haxotechlimited.online?subject=Technical%20Support">
+                        Technical Support
+                    </a>
+
+                    <a href="mailto:contact@haxotechlimited.online">
+                        contact@haxotechlimited.online
+                    </a>
 
                 </div>
 
