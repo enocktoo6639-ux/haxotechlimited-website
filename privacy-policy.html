@@ -1,0 +1,1302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#110e1b">
+<meta name="description" content="Corporate website privacy information for HAXOTECH LIMITED.">
+<title>Privacy Policy | HAXOTECH LIMITED</title>
+
+<style>
+:root {
+    --background: #110e1b;
+    --surface: #1b1628;
+    --raised: #251c36;
+    --amethyst: #35204c;
+    --lavender: #b898ff;
+    --gold: #f5c98b;
+    --white: #f8f5ff;
+    --muted: #c0b6d2;
+    --border: rgba(184,152,255,.17);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background);
+    color: var(--white);
+    font-family: "Segoe UI", Inter, Arial, sans-serif;
+    line-height: 1.8;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1220px, 90%);
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(17,14,27,.96);
+    backdrop-filter: blur(22px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: linear-gradient(145deg,var(--lavender),var(--gold));
+    color: var(--background);
+    font-size: 30px;
+    font-weight: 900;
+    box-shadow: 0 8px 30px rgba(184,152,255,.17);
+}
+
+.brand-name {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.3;
+}
+
+.brand-sub {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: var(--muted);
+}
+
+.back-button {
+    padding: 11px 22px;
+    border-radius: 9px;
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.back-button:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.notice {
+    text-align: center;
+    padding: 13px 20px;
+    background: #251c36;
+    color: var(--muted);
+    font-size: 13px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 85px 0;
+    background:
+        radial-gradient(ellipse at 85% 30%,#44265d,transparent 48%),
+        radial-gradient(ellipse at 0% 100%,#302040,transparent 45%),
+        #171121;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(184,152,255,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(184,152,255,.035) 1px,transparent 1px);
+    background-size: 60px 60px;
+    mask-image: linear-gradient(90deg,transparent,#000);
+}
+
+.hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: var(--gold);
+}
+
+h1 {
+    font-size: clamp(44px,6vw,80px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    margin-bottom: 23px;
+}
+
+.gradient-text {
+    background: linear-gradient(110deg,#c4a5ff,#f5c98b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 17px;
+    max-width: 650px;
+}
+
+.date-label {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 9px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(245,201,139,.23);
+    color: var(--gold);
+    background: rgba(245,201,139,.055);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero-art {
+    display: grid;
+    place-items: center;
+    min-width: 0;
+}
+
+.hero-art svg {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    overflow: visible;
+}
+
+.rotation {
+    transform-origin: 200px 200px;
+    animation: rotate 45s linear infinite;
+}
+
+.floating {
+    animation: float 7s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.policy-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0,1fr);
+    gap: 40px;
+    padding: 65px 0 90px;
+    align-items: start;
+}
+
+.sidebar {
+    position: sticky;
+    top: 110px;
+    max-height: calc(100vh - 135px);
+    overflow-y: auto;
+    background: linear-gradient(145deg,#281e39,#191323);
+    padding: 27px 20px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    scrollbar-width: thin;
+    scrollbar-color: #60417d transparent;
+}
+
+.sidebar h2 {
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+.sidebar a:hover {
+    background: rgba(184,152,255,.08);
+    color: var(--gold);
+}
+
+.policy-content {
+    min-width: 0;
+}
+
+.policy-section {
+    position: relative;
+    overflow: hidden;
+    padding: 34px;
+    margin-bottom: 23px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(145deg,#251c36,#191423);
+    scroll-margin-top: 110px;
+}
+
+.policy-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,rgba(245,201,139,.3),transparent);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-number {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    color: var(--gold);
+    background: rgba(245,201,139,.075);
+    border: 1px solid rgba(245,201,139,.15);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.policy-section h2 {
+    font-size: 23px;
+    line-height: 1.35;
+    letter-spacing: -.5px;
+}
+
+.policy-section p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.policy-section p:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section ul {
+    color: var(--muted);
+    font-size: 15px;
+    padding-left: 22px;
+    margin: 13px 0 18px;
+}
+
+.policy-section li {
+    padding: 5px 0;
+}
+
+.policy-section li::marker {
+    color: var(--lavender);
+}
+
+.policy-section strong {
+    color: var(--white);
+}
+
+.inline-link {
+    color: var(--lavender);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    overflow-wrap: anywhere;
+}
+
+.contact-box {
+    border-radius: 15px;
+    border: 1px solid rgba(245,201,139,.2);
+    padding: 28px;
+    margin-top: 22px;
+    background:
+        radial-gradient(ellipse at 100% 0%,#35204c,transparent 70%),
+        #21192f;
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    color: var(--gold);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #0d0a15;
+    padding: 45px 0 25px;
+    border-top: 1px solid var(--border);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 32px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 5px;
+}
+
+@media (max-width: 850px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero {
+        padding: 65px 0 35px;
+    }
+
+    .hero-art svg {
+        max-width: 280px;
+    }
+
+    .policy-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 30px;
+    }
+
+    .sidebar {
+        position: static;
+        max-height: none;
+    }
+
+    .policy-section {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .brand-name {
+        font-size: 13px;
+    }
+
+    .brand-sub {
+        letter-spacing: 3px;
+    }
+
+    .logo {
+        width: 39px;
+        height: 39px;
+        font-size: 24px;
+    }
+
+    .back-button {
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .policy-section,
+    .contact-box {
+        padding: 21px;
+    }
+
+    .policy-section h2 {
+        font-size: 19px;
+    }
+
+    .section-heading {
+        gap: 12px;
+    }
+
+    h1 {
+        letter-spacing: -1.5px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,*::before,*::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a class="brand" href="index.html"
+           aria-label="HAXOTECH LIMITED homepage">
+
+            <div class="logo" aria-hidden="true">H</div>
+
+            <div>
+                <div class="brand-name">HAXOTECH</div>
+                <div class="brand-sub">LIMITED</div>
+            </div>
+
+        </a>
+
+        <a class="back-button" href="index.html">
+            &larr; Back to Home
+        </a>
+
+    </div>
+</header>
+
+<div class="notice">
+    Draft privacy notice — pending organization approval
+    and confirmation of business contact arrangements.
+</div>
+
+<main>
+
+<section class="hero">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Privacy &amp; Transparency
+            </div>
+
+            <h1>
+                Your privacy.
+                <span class="gradient-text">
+                    Our responsibility.
+                </span>
+            </h1>
+
+            <p>
+                Privacy information concerning the corporate
+                website of HAXOTECH LIMITED, business
+                communications and the responsible handling
+                of personal information.
+            </p>
+
+            <span class="date-label">
+                Draft prepared: November 25, 2026
+            </span>
+
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+
+            <svg viewBox="0 0 400 400"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <defs>
+
+                    <linearGradient id="shieldPanel"
+                        x1="0" y1="0" x2="1" y2="1">
+
+                        <stop offset="0" stop-color="#60417d"/>
+                        <stop offset="1" stop-color="#20152e"/>
+
+                    </linearGradient>
+
+                    <linearGradient id="shieldAccent"
+                        x1="0" y1="0" x2="1" y2="1">
+
+                        <stop offset="0" stop-color="#b898ff"/>
+                        <stop offset="1" stop-color="#f5c98b"/>
+
+                    </linearGradient>
+
+                    <radialGradient id="shieldGlow">
+
+                        <stop offset="0"
+                              stop-color="#b898ff"
+                              stop-opacity=".2"/>
+
+                        <stop offset="1"
+                              stop-color="#b898ff"
+                              stop-opacity="0"/>
+
+                    </radialGradient>
+
+                </defs>
+
+                <circle cx="200" cy="200" r="195"
+                        fill="url(#shieldGlow)"/>
+
+                <g fill="none">
+
+                    <circle cx="200" cy="200" r="173"
+                            stroke="#b898ff" opacity=".2"/>
+
+                    <circle cx="200" cy="200" r="130"
+                            stroke="#f5c98b" opacity=".15"/>
+
+                </g>
+
+                <g class="rotation">
+
+                    <circle cx="200" cy="200" r="155"
+                            fill="none"
+                            stroke="#b898ff"
+                            stroke-dasharray="4 10"
+                            opacity=".5"/>
+
+                    <circle cx="200" cy="45" r="5"
+                            fill="#f5c98b"/>
+
+                    <circle cx="355" cy="200" r="4"
+                            fill="#b898ff"/>
+
+                    <circle cx="45" cy="200" r="4"
+                            fill="#b898ff"/>
+
+                </g>
+
+                <g class="floating">
+
+                    <path
+                        d="M200 65L317 130V270L200 335L83 270V130Z"
+                        fill="url(#shieldPanel)"
+                        stroke="#b898ff"
+                        stroke-opacity=".55"/>
+
+                    <path
+                        d="M200 87L297 142V258L200 313L103 258V142Z"
+                        fill="#251831"
+                        stroke="#f5c98b"
+                        stroke-opacity=".3"/>
+
+                    <g fill="none"
+                       stroke="url(#shieldAccent)"
+                       stroke-width="5"
+                       stroke-linecap="round"
+                       stroke-linejoin="round">
+
+                        <path
+                            d="M200 124L258 145V199
+                               C258 240 228 267 200 279
+                               C172 267 142 240 142 199
+                               V145Z"/>
+
+                        <rect x="175" y="190"
+                              width="50" height="40" rx="8"/>
+
+                        <path
+                            d="M184 190V177
+                               A16 16 0 0 1 216 177V190"/>
+
+                        <path d="M200 207V216"/>
+
+                    </g>
+
+                </g>
+
+            </svg>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="container policy-layout">
+
+    <aside class="sidebar">
+
+        <h2>Privacy Policy Contents</h2>
+
+        <nav aria-label="Privacy policy navigation">
+
+            <a href="#introduction">01. Introduction</a>
+            <a href="#scope">02. Scope of Policy</a>
+            <a href="#information">03. Information Collected</a>
+            <a href="#usage">04. Information Usage</a>
+            <a href="#legal">05. Legal Basis</a>
+            <a href="#cookies">06. Cookies &amp; Tracking</a>
+            <a href="#sharing">07. Information Sharing</a>
+            <a href="#retention">08. Data Retention</a>
+            <a href="#security">09. Data Security</a>
+            <a href="#rights">10. Privacy Rights</a>
+            <a href="#children">11. Children's Privacy</a>
+            <a href="#third-party">12. Third-Party Services</a>
+            <a href="#transfers">13. International Processing</a>
+            <a href="#applications">14. Mobile Applications</a>
+            <a href="#changes">15. Policy Updates</a>
+            <a href="#contact">16. Contact Information</a>
+
+        </nav>
+
+    </aside>
+
+    <article class="policy-content">
+
+        <section class="policy-section" id="introduction">
+
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <h2>Introduction</h2>
+            </div>
+
+            <p>
+                This draft privacy notice has been prepared
+                for HAXOTECH LIMITED to explain the handling
+                of personal information associated with its
+                corporate website and business communications.
+            </p>
+
+            <p>
+                HAXOTECH LIMITED provides mobile application
+                development, custom software development,
+                website development, systems integration,
+                and IT consulting and support.
+            </p>
+
+            <p>
+                The organization must review and approve this
+                notice against its actual information handling
+                practices before adopting it as an effective
+                privacy policy.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="scope">
+
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <h2>Scope of This Policy</h2>
+            </div>
+
+            <p>
+                This notice is intended to cover visitors
+                to the corporate website associated with
+                <strong>haxotechlimited.online</strong>
+                and individuals who communicate with the
+                organization through its business contact
+                channels.
+            </p>
+
+            <p>
+                Separate mobile applications, software products,
+                client information systems and third-party
+                services may require additional privacy
+                disclosures and contractual arrangements.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="information">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+                <h2>Information Collected</h2>
+            </div>
+
+            <p>
+                The current corporate website is designed
+                as an informational resource and does not
+                contain user registration forms, payment
+                forms or account login functionality.
+            </p>
+
+            <p>
+                Information associated with website hosting
+                and business communications may include:
+            </p>
+
+            <ul>
+                <li>Names and email addresses voluntarily provided in correspondence.</li>
+                <li>Business enquiries and technical support requests.</li>
+                <li>Information supplied when discussing software and technology services.</li>
+                <li>IP addresses and technical connection information processed by hosting infrastructure.</li>
+                <li>Browser information, device information and website request logs processed by service providers.</li>
+            </ul>
+
+            <p>
+                Individuals should avoid sending passwords,
+                financial credentials or unnecessary sensitive
+                personal information through general email.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="usage">
+
+            <div class="section-heading">
+                <span class="section-number">04</span>
+                <h2>How Information May Be Used</h2>
+            </div>
+
+            <p>
+                Subject to the organization's confirmed
+                information handling arrangements, relevant
+                information may be processed to:
+            </p>
+
+            <ul>
+                <li>Respond to business enquiries.</li>
+                <li>Discuss software and technology requirements.</li>
+                <li>Provide requested information and technical assistance.</li>
+                <li>Maintain website availability and security.</li>
+                <li>Investigate technical problems.</li>
+                <li>Communicate regarding business arrangements.</li>
+                <li>Comply with applicable legal obligations.</li>
+            </ul>
+
+        </section>
+
+        <section class="policy-section" id="legal">
+
+            <div class="section-heading">
+                <span class="section-number">05</span>
+                <h2>Legal Basis for Processing</h2>
+            </div>
+
+            <p>
+                Where applicable data protection legislation
+                requires a legal basis for processing personal
+                information, relevant grounds may include:
+            </p>
+
+            <ul>
+                <li>Consent, where required and freely provided.</li>
+                <li>Performance of a contract or steps requested before entering a contract.</li>
+                <li>Legitimate interests, subject to applicable individual rights.</li>
+                <li>Compliance with legal obligations.</li>
+            </ul>
+
+            <p>
+                The organization must determine the applicable
+                legal grounds according to its jurisdiction
+                and actual processing activities.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="cookies">
+
+            <div class="section-heading">
+                <span class="section-number">06</span>
+                <h2>Cookies and Tracking Technologies</h2>
+            </div>
+
+            <p>
+                The current corporate website source does not
+                intentionally install advertising cookies,
+                analytics cookies or tracking scripts.
+            </p>
+
+            <p>
+                Hosting providers, browser services and external
+                websites may independently process technical
+                information under their own privacy arrangements.
+            </p>
+
+            <p>
+                If advertising, analytics or other tracking
+                technologies are introduced, the relevant
+                privacy disclosures and consent arrangements
+                must be reviewed and updated.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="sharing">
+
+            <div class="section-heading">
+                <span class="section-number">07</span>
+                <h2>Information Sharing and Disclosure</h2>
+            </div>
+
+            <p>
+                Personal information may be processed by
+                service providers supporting website hosting,
+                email communications and technical operations.
+            </p>
+
+            <p>
+                Information may also require disclosure for
+                purposes such as:
+            </p>
+
+            <ul>
+                <li>Responding to requested services or enquiries.</li>
+                <li>Maintaining information system security.</li>
+                <li>Complying with applicable legal obligations.</li>
+                <li>Responding to valid requests from competent authorities.</li>
+                <li>Establishing, exercising or defending legal rights.</li>
+            </ul>
+
+            <p>
+                Actual recipients and sharing arrangements
+                must be confirmed before this notice is finalized.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="retention">
+
+            <div class="section-heading">
+                <span class="section-number">08</span>
+                <h2>Data Retention</h2>
+            </div>
+
+            <p>
+                Retention periods should reflect the purposes
+                for which information is collected, the nature
+                of relevant business relationships and applicable
+                legal requirements.
+            </p>
+
+            <p>
+                Hosting and email providers may retain operational
+                records and backups according to their own
+                retention policies.
+            </p>
+
+            <p>
+                The organization's specific retention periods
+                and information deletion procedures remain
+                subject to confirmation.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="security">
+
+            <div class="section-heading">
+                <span class="section-number">09</span>
+                <h2>Data Security</h2>
+            </div>
+
+            <p>
+                Appropriate technical and organizational
+                security measures are important for protecting
+                personal information against unauthorized
+                access, alteration, disclosure or loss.
+            </p>
+
+            <p>
+                HTTPS encryption is planned for the corporate
+                website through its hosting infrastructure.
+                The final security configuration must be tested
+                before launch.
+            </p>
+
+            <p>
+                No method of internet transmission or electronic
+                storage can be guaranteed completely secure.
+                Individuals should exercise appropriate care
+                when sharing information online.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="rights">
+
+            <div class="section-heading">
+                <span class="section-number">10</span>
+                <h2>Your Privacy Rights</h2>
+            </div>
+
+            <p>
+                Depending on applicable data protection laws
+                and individual circumstances, individuals
+                may have rights including:
+            </p>
+
+            <ul>
+                <li>Requesting access to personal information.</li>
+                <li>Requesting correction of inaccurate information.</li>
+                <li>Requesting deletion where legally applicable.</li>
+                <li>Objecting to or restricting certain processing activities.</li>
+                <li>Requesting data portability where applicable.</li>
+                <li>Withdrawing consent where processing relies on consent.</li>
+                <li>Submitting complaints to a competent data protection authority.</li>
+            </ul>
+
+            <p>
+                The organization must confirm the procedures
+                for responding to privacy requests, applicable
+                deadlines and relevant supervisory authorities.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="children">
+
+            <div class="section-heading">
+                <span class="section-number">11</span>
+                <h2>Children's Privacy</h2>
+            </div>
+
+            <p>
+                The corporate website is designed to provide
+                general business and technology information.
+                It does not contain child-specific registration
+                or account creation functionality.
+            </p>
+
+            <p>
+                Any applications or software services intended
+                for younger audiences must have appropriate
+                privacy arrangements reflecting their intended
+                users and applicable legal requirements.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="third-party">
+
+            <div class="section-heading">
+                <span class="section-number">12</span>
+                <h2>Third-Party Services and Links</h2>
+            </div>
+
+            <p>
+                The corporate website is being prepared for
+                hosting through GitHub Pages. Business email
+                services are planned through Namecheap Private
+                Email.
+            </p>
+
+            <p>
+                These providers may process information in
+                connection with their respective services.
+                Further information is available in their
+                privacy documentation:
+            </p>
+
+            <ul>
+
+                <li>
+                    <a class="inline-link"
+                       href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub General Privacy Statement
+                    </a>
+                </li>
+
+                <li>
+                    <a class="inline-link"
+                       href="https://www.namecheap.com/legal/general/privacy-policy/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Namecheap Privacy Policy
+                    </a>
+                </li>
+
+            </ul>
+
+            <p>
+                External websites and services may operate
+                independently and have their own privacy
+                policies and terms.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="transfers">
+
+            <div class="section-heading">
+                <span class="section-number">13</span>
+                <h2>International Data Processing</h2>
+            </div>
+
+            <p>
+                Website hosting, communications and supporting
+                infrastructure providers may operate in
+                different countries.
+            </p>
+
+            <p>
+                Consequently, information associated with
+                website visits and business communications
+                may be processed outside an individual's
+                country of residence.
+            </p>
+
+            <p>
+                Relevant transfer arrangements, safeguards
+                and applicable legal requirements must be
+                reviewed by the organization before adopting
+                this policy.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="applications">
+
+            <div class="section-heading">
+                <span class="section-number">14</span>
+                <h2>Mobile Applications and Software</h2>
+            </div>
+
+            <p>
+                HAXOTECH LIMITED's confirmed business activities
+                include mobile application development and
+                custom software development.
+            </p>
+
+            <p>
+                Individual applications and software products
+                require privacy disclosures reflecting their
+                actual functionality and information handling
+                practices.
+            </p>
+
+            <p>
+                Where applicable, separate application privacy
+                policies must address:
+            </p>
+
+            <ul>
+                <li>Personal information and device information collected.</li>
+                <li>Application permissions and their purposes.</li>
+                <li>Advertising and analytics technologies.</li>
+                <li>Third-party software development kits and service providers.</li>
+                <li>Information sharing and retention practices.</li>
+                <li>Data security arrangements.</li>
+                <li>Account deletion and personal data deletion procedures.</li>
+                <li>Applicable children's privacy requirements.</li>
+            </ul>
+
+            <p>
+                This corporate website privacy notice does not
+                replace the privacy policy required for any
+                individual mobile application or software service.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="changes">
+
+            <div class="section-heading">
+                <span class="section-number">15</span>
+                <h2>Changes to This Privacy Policy</h2>
+            </div>
+
+            <p>
+                This notice should be reviewed whenever website
+                functionality, service providers, information
+                handling arrangements or applicable legal
+                requirements change.
+            </p>
+
+            <p>
+                Following organization approval, the effective
+                policy and subsequent revisions should be
+                published on this page with the appropriate
+                effective or update date.
+            </p>
+
+        </section>
+
+        <section class="policy-section" id="contact">
+
+            <div class="section-heading">
+                <span class="section-number">16</span>
+                <h2>Contact Information</h2>
+            </div>
+
+            <p>
+                The following business contact channel is
+                proposed for corporate enquiries, technical
+                support and privacy-related communications.
+            </p>
+
+            <div class="contact-box">
+
+                <div class="eyebrow">
+                    Corporate &amp; Privacy Contact
+                </div>
+
+                <h3>HAXOTECH LIMITED</h3>
+
+                <p>
+                    <strong>Website domain:</strong><br>
+
+                    <a class="inline-link" href="index.html">
+                        haxotechlimited.online
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Proposed business email:</strong><br>
+
+                    <span class="contact-email">
+                        contact@haxotechlimited.online
+                    </span>
+                </p>
+
+                <p>
+                    Business email activation, testing and
+                    privacy request arrangements are pending
+                    confirmation.
+                </p>
+
+            </div>
+
+        </section>
+
+    </article>
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <a class="brand" href="index.html">
+
+                <div class="logo" aria-hidden="true">H</div>
+
+                <div>
+                    <div class="brand-name">HAXOTECH</div>
+                    <div class="brand-sub">LIMITED</div>
+                </div>
+
+            </a>
+
+            <nav class="footer-links"
+                 aria-label="Footer navigation">
+
+                <a href="index.html">Home</a>
+
+                <a href="index.html#about">About Us</a>
+
+                <a href="index.html#services">Services</a>
+
+                <a href="privacy-policy.html"
+                   aria-current="page">
+                    Privacy Policy
+                </a>
+
+                <a href="index.html#contact">Contact</a>
+
+            </nav>
+
+        </div>
+
+        <div class="copyright">
+
+            <span>
+                &copy; <span id="year">2026</span>
+                HAXOTECH LIMITED. All rights reserved.
+            </span>
+
+            <span>
+                Corporate Privacy Notice &middot; Draft
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
